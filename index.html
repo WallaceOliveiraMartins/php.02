@@ -12,14 +12,29 @@
     
         <h3>Cadastro de clientes</h3>
     
-        <form action="gravar.php" method="post">
+        <form action="gravar.php" method="post" style=width:500px;>
             Nome: <br>
-            <input type="text" name="nome" class="form-control" style="width:500px"><br>
+            <input type="text" name="nome" class="form-control"><br>
             E-mail: <br>
-            <input type="email" name="email" class="form-control" style="width:500px"><br>
-            <input type="submit" name="enviar" value="Cadastrar" class="##">
-        
+            <input type="email" name="email" class="form-control"><br>
+            Estado civil: <br>
+            <select class="form-control" name="estadocivil">
+                <option disabled selected>-Selecione-</option>
+                <option value="Solteiro">Solteiro(a)</option>
+                <option value="Casado">Casado(a)</option>
+                <option value="Divorciado">Divorciado(a)</option>
+                <option value="Viúvo">Viúvo(a)</option>
+            </select><br>
+            
+            Sexo:<br>
+            <input type="radio" name="sexo" value="M" checked>Masculino
+            <input type="radio" name="sexo" value="F">Feminino<br><br>    
+            
+            
+            <input type="submit" name="enviar" value="Cadastrar" class="sub" style= color:dodgerblue><br><br>
         </form>
+        
+        
    </div> 
 </body>
 </html>
