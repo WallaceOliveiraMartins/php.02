@@ -5,12 +5,8 @@ $email       = $_POST["email"];
 $estadocivil = $_POST["estadocivil"];
 $sexo        = $_POST["sexo"];
 
-echo"Nome: " . $nome;
-echo"<br>Email: " . $email;
-echo"<br>Estado Civil: " . $estadocivil;
-echo"<br>Sexo: " . $sexo;
-
-
-
+include_once 'conexão.php';
+    
+"INSERT INTO clientes VALUES(null, '$nome', '$email', '$estadocivil', '$sexo')";    
 
 ?>
